@@ -96,6 +96,28 @@ margin: 80px auto;
     color:#ff900e;
     font-weight: 700;
 }
+/* facts styles */
+.card-facts-container{
+    display: flex;
+    justify-content: space-around;
+}
+.card-facts-container .card{
+    border-radius: 8px;
+    border:1px solid #ff900e;
+    text-align: center;
+    padding:30px;
+}
+.card-facts-container .card-stats{
+    font-size:2.8rem;
+    color:#424242;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.card-facts-container .card-title{
+    font-weight: 600;
+    font-size:1.25rem;
+    margin-top:5px;
+}
 
 /* responsive styles */
 @media screen and (max-width:576px){
