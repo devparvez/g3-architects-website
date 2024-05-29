@@ -58,13 +58,54 @@ nav li a{
     color:#131313;
 }
 .banner-description{
-    font-color:#727272;
+    color:#727272;
 
 }
 .banner img{
     width:100%;
     margin-top:20px;
 }
+/* features section */
+.features{
+    margin-top: 130px;
+    display: flex;
+    gap:100px;
+}
+.features .section-title{
+    border-left:5px solid #ff900e;
+    padding-left:20px;
+}
+.features-content .card{
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom:20px;
+    padding:30px;
+}
+.ten-years-badge{
+    border-radius:8px;
+    background:#ff900e;
+    color:#fff;
+    width:342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size:4rem;
+    font-weight: 700;
+    margin:0px;
+}
+.ten-years-badge p{
+    font-size:1.5rem;
+    margin-top: 0px;
+}
+.features-img img{
+    height:90%;
+    margin-left:90px;
+}
+
 /* team section */
 
 main{
@@ -83,7 +124,7 @@ margin: 80px auto;
 }
 .teams-content{
     padding-left:70px;
-    padding-right: 70px;
+    padding-right:70px;
 }
 .teams-title{
     font-size:2.8rem;
@@ -118,6 +159,7 @@ margin: 80px auto;
     font-size:1.25rem;
     margin-top:5px;
 }
+
 /* sponsor styles */
 .sponsor{
     text-align: center;
@@ -129,6 +171,9 @@ margin: 80px auto;
     align-items: center;
     gap:20px;
 }
+.hide{
+    display: none;
+}
 
 
 /* responsive styles */
@@ -138,10 +183,11 @@ margin: 80px auto;
     }
     .card-facts-container,
     nav,
+    .features,
     .teams-container
     {
         flex-direction: column;
-         /* align-items: normal;  */
+         align-items: normal; 
     }
     .teams-img-container{
         grid-template-columns: 1fr;
@@ -151,6 +197,14 @@ margin: 80px auto;
     .banner-title{
         font-size: 2rem;
 
+    }
+    .features-img img{
+        width:100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+        width:300px;
+        position: static;
     }
     .teams-container{
         margin:0px;
@@ -179,7 +233,7 @@ margin: 80px auto;
 /* For tablet or medium devices */
 @media  screen and (min-width:576px) and (max-width:992px){
 
-    nav{
+    nav,.features{
         flex-direction: column;
 
     }
@@ -199,6 +253,9 @@ margin: 80px auto;
     } 
     .card-facts-container{
         gap:10px;
+    }
+    .sponsor-img-container{
+        flex-direction: column;
     }
    
 }
