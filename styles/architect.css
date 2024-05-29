@@ -212,8 +212,9 @@ margin: 80px auto;
         margin-left: 0px;
     }
     .ten-years-badge{
-        width:300px;
-        position: static;
+        width:250px;
+        position:static;
+        padding:5px;
     }
     .teams-container{
         margin:0px;
